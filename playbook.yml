@@ -15,7 +15,7 @@
 ---
 - name: Provisioning node
   hosts: provisioning
-  remote_user: vagrant
+  remote_user: centos
   become: yes
   roles:
     - provisioning
@@ -24,7 +24,7 @@
   
 - name: Undercloud node
   hosts: provisioning
-  remote_user: vagrant
+  remote_user: centos
   become: yes
   roles:
     - undercloud
@@ -33,7 +33,7 @@
 
 - name: Overcloud node
   hosts: provisioning
-  remote_user: vagrant
+  remote_user: centos
   become: yes
   roles:
     - overcloud

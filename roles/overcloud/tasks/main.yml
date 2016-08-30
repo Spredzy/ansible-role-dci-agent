@@ -13,8 +13,6 @@
 ---
 - name: Run the overcloud step
   shell: chainsaw-ovb --config-file /etc/chainsaw.conf overcloud
-  args:
-    chdir: /home/vagrant/python-tripleo-helper
   environment:
     OS_USERNAME: '{{ os_username }}'
     OS_PASSWORD: '{{ os_password }}'
